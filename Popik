@@ -3,7 +3,7 @@ local playerJoinEnabled = true
 
 game.Players.PlayerAdded:Connect(function(player)
     if playerJoinEnabled then
-        local message = "h \n \n \n \n \n \n " .. player.Name .. " joined the server! >.!-------"
+        local message = "h \n \n \n \n \n \n " .. player.Name .. " joined the server! .1>.!-------"
         game.Players:Chat(message)
         if player.Name == game.Players.LocalPlayer.Name then
             game.Players:Chat("!gearannounce disable")
@@ -92,8 +92,8 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
     game.Players:Chat("jail me")
     wait(0.3)
     game.Players:Chat(".viewpart baseplate")
-    wait(0.3)
-    game.Players:Chat("tp me " .. letter)
+    wait(1)
+    game.Players:Chat("respawn me")
     wait(1)
     game.Players:Chat(".rkick " .. letter)
 end
